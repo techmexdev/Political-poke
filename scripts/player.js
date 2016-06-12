@@ -1,0 +1,1 @@
+var playerHP=20;

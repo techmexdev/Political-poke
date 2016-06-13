@@ -11,15 +11,25 @@
 <style>
   h1 {
   font-family: courier new;
-  font-size: 3.5em;
+  font-size: 4em;
   color: #252525;
   }
 
   h3 {
   font-family: courier new;
-  font-size: 1.5em;
-  text-align: left;
+  font-size: 2em;
+  text-align: center;
   color: #252525;
+  }
+
+  h5 {
+  font-family: courier new;
+  text-align: center;
+  color: #252525
+  }
+
+  button {
+  text-align: center;
   }
 
   body {
@@ -27,74 +37,57 @@
   background-size: 120%;
   }
 
-  .title {
-  margin-top: 80px;
+  .text-center {
+  margin-top: 65px;
   margin-bottom: 50px;
-  margin-left: 100px;
-}
+  }
 
-.footer{
+  .footer{
   margin-top: 50px;
   margin-left: 50px;
-}
-
-.float-left {
-  float: left;
   }
 </style>
 
 <body>
-  <h1 class="title">Choose Your Candidate</h1>
-  <div class="container">
+  <div class="container-fluid">
+    <h1 class="text-center">Choose Your Candidate</h1>
     <div class="row">
-      <div class="col-md-12">
-        <h3>Trump</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/trump.gif">
+      <div class="col-xs-6">
+        <h3>Left-Wing</h3>
+        <div class="well">
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/obama.gif"><h5>Barrack Obama</h5>
+          </button>
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/clinton.gif">
+            <h5>Hillary Clinton</h5></button>
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/sanders.gif">
+            <h5>Bernie Sanders</h5></button>
         </div>
       </div>
-      <div class="col-md-12">
-        <h3>Hillary</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/clinton.gif">
-        </div>
-      </div>
-      <div class="col-md-12">
-        <h3>Bernie</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/sanders.gif">
-        </div>
-      </div>
-      <div class="col-md-12">
-        <h3>Obama</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/obama.gif">
-        </div>
-      </div>
-      <div class="col-md-12">
-        <h3>Ted</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/cruz.gif">
-        </div>
-      </div>
-      <div class="col-md-12">
-        <h3>Jeb</h3>
-        <div class="thumbnail btn btn-primary float-left">
-          <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/bush.gif">
+      <div class="col-xs-6">
+        <h3>Right-Wing</h3>
+        <div class="well">
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/trump.gif"><h5>Donald Trump</h5>
+          </button>
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/cruz.gif"><h5>Ted Cruz</h5>
+          </button>
+          <button class="btn btn-default target col-md-12">
+            <img src="https://raw.githubusercontent.com/rodolfo-r/Political-poke/master/images/bush.gif"><h5>Jeb Bush</h5>
+          </button>
         </div>
       </div>
     </div>
-
   </div>
-
-
   <div>
     <div class="row">
       <footer class="footer">
         <p>&copy; Copyright 2016 </p>
       </footer>
     </div>
-
-</html>
+</body>
 
 </html>
